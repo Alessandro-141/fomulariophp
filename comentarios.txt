@@ -1,0 +1,53 @@
+Estes códigos em html e php foram executados com sucesso no navegador.
+
+SITE IMPORTANTE que contém este material e outras dicas relevantes.
+
+Primeiro passo:
+Instânciar o XAMPP para executar PHP.
+
+Segundo passo:
+Instânciar o navegador utilizando o navegador:
+http://localhost/formularioteste/RespForm1.php
+Vai imprimir está tela abaixo:
+Warning: Undefined array key "nome" in C:\xampp\htdocs\formularioteste\RespForm1.php on line 3
+
+Warning: Undefined array key "senha" in C:\xampp\htdocs\formularioteste\RespForm1.php on line 4
+
+Warning: Undefined array key "sexo" in C:\xampp\htdocs\formularioteste\RespForm1.php on line 5
+
+Warning: Undefined array key "turno" in C:\xampp\htdocs\formularioteste\RespForm1.php on line 6
+
+Warning: Undefined array key "cidade" in C:\xampp\htdocs\formularioteste\RespForm1.php on line 7
+Os dados recebidos do formulário são:
+Nome:		
+Senha:		
+Sexo:		
+Turno:		
+Cidade:		
+Clique aqui para voltar ao formulário. ==> Tenho que clicar AQUI para me 
+direcionar para: localhost/formularioteste/form1.html.
+
+OBS: Se eu Instânciar assim:  localhost/formularioteste/form1.html,
+também posso preencher o formulário e clicar em "enviar".
+
+Não funcionará se eu abrir pelo open with Live Server.
+
+OBS: Se eu Instânciar no navegador no modo "GET" ao preencher o formulário as
+respostas serão vistas na "URL" o que não é aconselhável por segurança, POR 
+ISSO é que se utiliza o "POST".
+No modo "GET" ==> <form name="form1" method="get" action="RespForm1.php">
+Reset Set: As respostas ficam armazenadas na "URL".
+http://localhost/formularioteste/RespForm1.php?nome=usuario&senha=senha1234&sexo=Masculino&turno=Manh%C3%A3&cidade=Rio&btnOK=1
+
+O CORRETO É ASSIM: http://localhost/formularioteste/RespForm1.php
+Result Set será assim:
+Os dados recebidos do formulário são:
+Nome:		usuario
+Senha:		senha1234
+Sexo:		Masculino
+Turno:		Manhã
+Cidade:		Porto Alegre
+Clique aqui para voltar ao formulário.
+OBS: No modo "POST" ==> <form name="form1" method="post" action="RespForm1.php">
+Reset Set:
+
